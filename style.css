@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-image: url(./images/interior-img.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-color: #00000054;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header-section span{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.header-section{
+    display: flex;
+    margin: 4rem;
+}
+
+.nav-links{
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-links li{
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.nav-links li:first-child{
+    margin-left: 0;
+    font-size: 1.3rem;
+}
+
+.nav-item{
+    color: white;
+}
+
+.nav-links li:last-child{
+    color: white;
+}
+
+.nav-links li:last-child i{
+    -webkit-transform: rotate(-45deg);
+    margin-right: 1rem;
+}
+
+.main-section{
+    margin: 0 10rem;
+}
+
+.main-heading{
+    color: white;
+    font-size: 5rem;
+    max-width: 900px;
+    margin-top: 8rem;
+}
+
+.main-btn button{
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    background: none;
+    color: white;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    border: 4px solid white;
+    font-weight: 500;
+}
+
+
+.main-btn button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    padding: 2rem;
+    background: #cecece84;
+    position: absolute;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px #0000004c;
+}
+
+.card-puzzle {
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+    animation-name: puzzle-example;
+    animation-duration: 8s;
+}
+
+.card-light {
+    position: absolute;
+    bottom: 5rem;
+    right: 25rem;
+    animation-name: light-example;
+    animation-duration: 8s;
+}
+.card-light .line {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    transform: rotate(180deg);
+}
+
+.icon-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 5rem;
+    background: #fff;
+}
+
+.desc {
+    position: absolute;
+    margin-right: 1rem;
+    bottom: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.card-puzzle .line {
+    position: absolute;
+    bottom: -67px;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+@keyframes puzzle-example {
+    from {  transform: rotate(90deg);}
+    to {  transform: rotate(360deg);}
+}
+
+@keyframes light-example {
+    from {  transform: rotate(90deg);}
+    to {  transform: rotate(-360deg);}
+}
+
+@media screen and (max-width:1250px) {
+
+    body {
+        background-position: top left;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .card-light {
+        bottom: 2rem;
+        right: 1rem;    
+    }
+
+    .card-puzzle {
+        top: 4rem;
+        right: 1rem;
+    }
+
+    .main-heading{
+        margin-top: 10rem;    
+        font-size: 3rem;
+        width: 400px;
+    }
+
+    .main-section{
+        margin-left: 2rem;
+    }
+
+    
+    .main-btn button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+}
