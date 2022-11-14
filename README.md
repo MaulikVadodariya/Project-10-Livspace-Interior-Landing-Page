@@ -12,6 +12,7 @@ By Maulik Vadodariya
 
 - I have done this project using `HTML` and `CSS` only.
 - In this project I learned how to use little animation.
+- Responsive Design.
 
 ## I spent 4 to 5 hours in making this project
 
